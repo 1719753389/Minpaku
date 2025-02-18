@@ -20,12 +20,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* 纵向排列，适配手机 */
         }
         img {
-            max-width: 95%; /* 图片最大宽度为屏幕的 95%，不会超出 */
-            height: auto; /* 自动调整高度，保持清晰 */
+            width: 90%; /* 限制最大宽度，适配手机 */
+            height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -34,7 +35,11 @@
 <body>
     <h2>House Rules</h2>
     <div class="container">
-        <img src="https://res.cloudinary.com/dt5jyze5a/image/upload/v1739848506/house_rules_merged_ud_nywdkg.png" alt="House Rules">
+        <h3>中文版</h3>
+        <img src="https://asset.cloudinary.com/dt5jyze5a/c4d419032b3f15588c1a37b7e516ca1d" alt="House Rules (Chinese)">
+        
+        <h3>韩文版</h3>
+        <img src="https://asset.cloudinary.com/dt5jyze5a/7b74376a04e273d2097fc31e6256f703" alt="House Rules (Korean)">
     </div>
 </body>
 </html>
